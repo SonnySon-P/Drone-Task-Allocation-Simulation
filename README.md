@@ -6,7 +6,7 @@ This system utilizes a distributed architecture, empowering each drone with the 
 II. Development Environment
 The following environment was used for the development of this program:
 - Programming Language: Python
-- Editor / IDE: Google Colaboratory
+- Editor / IDE: Visual Studio Code
 
 III. Dependencies
 The following Python libraries were utilized in the development of this platform:
