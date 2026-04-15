@@ -5,12 +5,10 @@ I. Project Overview
 This system utilizes a distributed architecture, empowering each drone with the autonomous capability to search for targets (represented as red dots on the screen). Upon detecting a task, the drone initiates a consensus protocol with other units within its communication radius. By evaluating relative distances and current workloads, the system achieves optimized task allocation.
 
 II. Development Environment
-The following environment was used for the development of this program:
 - Programming Language: Python
 - Editor / IDE: Visual Studio Code
 
 III. Dependencies
-The following Python libraries were utilized in the development of this platform:
 - Pygame: Used for the visualization of the drone simulation.
 
 IV. Results
