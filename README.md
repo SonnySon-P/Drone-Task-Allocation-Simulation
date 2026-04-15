@@ -15,6 +15,6 @@ The following Python libraries were utilized in the development of this platform
 IV. Results
 <br>
   <div align="center">
-  	<img src="./截圖.png" alt="Editor" width="500">
+  	<img src="./screenshot.png" alt="Editor" width="500">
   </div>
 <br>
