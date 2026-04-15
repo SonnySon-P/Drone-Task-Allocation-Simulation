@@ -10,6 +10,7 @@ II. Development Environment
 
 III. Dependencies
 - Pygame: Used for the visualization of the drone simulation.
+- Numpy: Mathematical computing tool.
 
 IV. Results
 <br>
