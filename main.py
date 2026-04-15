@@ -23,7 +23,8 @@ drone_communication_radius = 200
 background_color = (18, 20, 24)
 drone_body_color = (200, 200, 200)
 drone_rotor_color = (120, 200, 255)
-drone_camera_color = (2, 222, 131, 80)
+drone_search_task_color = (2, 222, 131)
+drone_execution_task_color = (255, 255, 0)
 task_color = (230, 80, 80)
 
 pg.init()
@@ -198,7 +199,11 @@ class Drone:
 
         triangle_points = [(int(point_0[0]), int(point_0[1])), (int(point_1[0]), int(point_1[1])), (int(point_2[0]), int(point_2[1]))]
 
-        draw_fov_color = (255, 255, 0, 100) if self.target_task else drone_camera_color
+        draw_fov_color = None
+        if self.target_task:
+            draw_fov_color = drone_execution_task_color
+        else:
+            draw_fov_color = drone_search_task_color
         pg.draw.polygon(surface, draw_fov_color, triangle_points, 1)
 
         offsets = [rotate(np.array([drone_arm_length, 0]), np.pi / 4), rotate(np.array([-drone_arm_length, 0]), np.pi / 4), rotate(np.array([0, drone_arm_length]), np.pi / 4), rotate(np.array([0, -drone_arm_length]), np.pi / 4)]
